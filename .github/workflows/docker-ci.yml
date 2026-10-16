@@ -58,8 +58,8 @@ jobs:
           echo "Health check failed"
           exit 1
 
-      - name: Scan image with Trivy
-        uses: aquasecurity/trivy-action@0.28.0
+      - name: Scan image with Trivyuses: aquasecurity/trivy-action@0.33.1
+        
         with:
           image-ref: winter-arc-app:${{ github.sha }}
           format: table
